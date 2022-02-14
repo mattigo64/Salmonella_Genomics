@@ -1,5 +1,5 @@
 library(readxl)
-SNPs <- read_excel("~/Dropbox/Matt Igo - Schaffner Lab/Dissertation/Genomic Project/Results/SNPs and Rates of Reduction.xlsx", 
+SNPs <- read_excel("~/Path/To/File", 
                                           sheet = "MFA")
 
 
@@ -60,7 +60,7 @@ fviz_pca_var(res.pca.1,
 
 
 
-SNPsPCA <- read_excel("~/Dropbox/Matt Igo - Schaffner Lab/Dissertation/Genomic Project/Results/SNPs and Rates of Reduction.xlsx", 
+SNPsPCA <- read_excel("~/Path/To/File", 
                    sheet = "PCA")
 
 SNPsPCA2 = SNPsPCA %>% remove_rownames %>% column_to_rownames(var="Strains") %>% as.data.frame()
